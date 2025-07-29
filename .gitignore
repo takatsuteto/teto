@@ -34,3 +34,7 @@ results/
 # 大きい ROOT は除外（例外的に test.root だけ許可）
 *.root
 !test.root
+
+# track VS Code workspace settings
+!.vscode
+!.vscode/**
