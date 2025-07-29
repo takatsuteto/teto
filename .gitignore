@@ -1,5 +1,36 @@
-*.root
-*.pdf
-*.png
+# Python venv
+.venv/
+
+# Build artifacts
 build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+*.o
+*.a
+*.so
+*.dylib
+
+# ローカルログ・一時
+audit/
+_tmp_plots*/
+tmp*/
+*.log
+
+# macOS
+.DS_Store
+
+# VS Code ローカル設定（共有したい場合はコメントアウト）
+.vscode/
+
+# コンパイル DB（環境依存）
+compile_commands.json
+
+# 画像・結果の誤登録防止
+plots/
 logs/
+results/
+
+# 大きい ROOT は除外（例外的に test.root だけ許可）
+*.root
+!test.root
