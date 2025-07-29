@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run batch (today)",
+      "type": "shell",
+      "command": "bash --noprofile --norc -lc './scripts/daily_run_today.sh'",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    }
+  ]
+}
