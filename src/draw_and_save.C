@@ -1,8 +1,15 @@
+#include "TROOT.h"
+#include "TFile.h"
+#include "TH1.h"
+#include "TCanvas.h"
+#include "TSystem.h"
+#include "TString.h"
+
 void draw_and_save(const char* infile,
                    const char* histname="hADC",
                    const char* outdir="plots")
 {
-  gStyle->SetBatch(kTRUE);
+  gROOT->SetBatch(kTRUE);
 
   TFile f(infile);
   if (f.IsZombie()) { printf("Cannot open %s\n", infile); return; }
